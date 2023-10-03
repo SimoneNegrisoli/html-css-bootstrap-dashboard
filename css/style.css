@@ -48,3 +48,15 @@ main{
 #main-nav{
     background-color: ;
 }
+
+/* MEDIA QUERY */
+@media screen and (max-width: 991px){
+    #side-bar{
+        width: 80px;
+        height: 100%;
+    }
+    #main-content{
+        width: calc(100% - 80px);
+        height: 100%;
+    }
+}
