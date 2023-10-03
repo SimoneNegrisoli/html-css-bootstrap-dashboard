@@ -47,14 +47,12 @@ main{
 
 
 #main-nav{
-    background-color: ;
+    background-color:var(--color-nav-bar) ;
 }
 #side-bar ul li:hover{
     background-color: white;
     color: black;
 }
-
-
 
 
 /* HEADER */
