@@ -25,6 +25,9 @@ header{
     width: 100%;
     height: 70px;
 }
+header div{
+    width: 100%;
+}
 main{
     width: 100%;
     height: calc(100% - 70px);
@@ -42,12 +45,44 @@ main{
     overflow-y: auto;
 }
 
-.debug{
-    border: 1px solid black;
-}
+
 #main-nav{
     background-color: ;
 }
+#side-bar ul li:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+
+/* HEADER */
+#logo{
+    width: 20%;
+}
+#mobile-logo{
+    width: 80px;
+}
+#deck-logo{
+    width: 100%;
+}
+#header-button{
+    width: 20%;
+}
+#bell{
+    color: #FF8F00;
+}
+#header-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+
+
+
 
 /* MEDIA QUERY */
 @media screen and (max-width: 991px){
@@ -59,4 +94,5 @@ main{
         width: calc(100% - 80px);
         height: 100%;
     }
+
 }
