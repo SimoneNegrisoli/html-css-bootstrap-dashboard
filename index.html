@@ -103,11 +103,105 @@
                 <div id="main-nav"
                     class="container-fluid flex-column d-lg-flex flex-lg-row justify-content-between align-content-center align-items-center gap-5 py-2">
 
-                    <div class="order-lg-3">
-                        /1 nuovo studente + off canvas/
+                    <!-- parte 3 e offcanvas -->
+                    <div class="order-lg-3 py-1">
+                        Nuovo studente
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="offcanvas"
+                            data-bs-target="#newstudent" aria-controls="newstudent">
+                            <i class="fa-sharp fa-solid fa-plus fa-lg"></i>
+                        </button>
 
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="newstudent"
+                            aria-labelledby="newstudentLabel">
+
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="newstudentLabel">
+                                    Inserisci un nuovo studente
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <form>
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-6 mt-3">
+                                                <label for="nomestudente" class="form-label">Nome</label>
+                                                <input type="text" id="nomestudente" class="form-control" required>
+                                            </div>
+
+                                            <div class="col-12 col-lg-6 mt-3">
+                                                <label for="cognomestudente" class="form-label">Cognome</label>
+                                                <input type="text" id="cognomestudente" class="form-control" required>
+                                            </div>
+
+                                            <div class="col-12 col-lg-6 mt-3">
+                                                <label for="emailstudente" class="form-label">Email</label>
+                                                <div class="input-group">
+                                                    <div class="input-group-text">@
+                                                    </div>
+                                                    <input type="email" id="emailstudente" class="form-control" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-lg-6 mt-3">
+                                                <label for="pwdstudente" class="form-label">Password</label>
+                                                <input type="password" id="pwdstudente" class="form-control" required>
+                                            </div>
+
+                                            <div class="col-12 mt-3">
+                                                <label for="indirizzostudente" class="form-label">Indirizzo</label>
+                                                <input type="text" id="indirizzostudente" class="form-control" required
+                                                    placeholder="Via e numero civico">
+                                            </div>
+
+                                            <div class="col-12 col-lg-4 mt-3">
+                                                <label for="inputCity" class="form-label">City</label>
+                                                <input type="text" class="form-control" id="inputCity">
+                                            </div>
+
+                                            <div class="col-12 col-lg-4 mt-3">
+                                                <label for="inputState" class="form-label">State</label>
+                                                <select id="inputState" class="form-select">
+                                                    <option selected>Scegli</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-12 col-lg-4 mt-3">
+                                                <label for="inputcap" class="form-label">Zip</label>
+                                                <input type="text" class="form-control" id="inputcap">
+                                            </div>
+
+                                            <div class="col-12 mt-3">
+                                                <label for="imagestudent" class="form-label">Zip</label>
+                                                <input type="file" class="form-control" id="imagestudent"
+                                                    placeholder="Nessun file selezionato">
+                                            </div>
+
+                                            <div class="col-12 mt-5">
+                                                <input type="checkbox" id="checkutente" class="form-check-input" required>
+                                                <label for="checkutente" >Seleziona qui per proseguire</label>
+                                            </div>
+                                            
+                                            <div class="col-12 mt-3">
+                                                <button type="submit" class="btn btn-primary bg-success my-border-succes ">Salva</button>
+                                                <button type="reset" class="btn btn-primary bg-warning my-border-warning">Svuota</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
                     </div>
-                    <div class="order-lg-1">
+
+
+
+
+
+
+                    <div class="order-lg-1 py-1">
                         <div>
                             <h3>Boolean</h3>
                             <span class="badge rounded-pill my-pill-colors">
@@ -133,7 +227,7 @@
                         </div>
                     </div>
 
-                    <div class="order-lg-2">
+                    <div class="order-lg-2 py-1">
                         <div>Studenti online negli ultimi 30 minuti</div>
                         <div class="display-6"><strong>125</strong></div>
 

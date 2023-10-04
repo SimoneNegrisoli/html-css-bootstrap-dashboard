@@ -99,6 +99,13 @@ main{
         background-color: #165BBA;
     }
 
+    .my-border-succes{
+        border: #198753;
+    }
+    .my-border-warning{
+        border: #ffc007;
+    }
+
 /* MEDIA QUERY */
 @media screen and (max-width: 991px){
     #side-bar{
