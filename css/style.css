@@ -78,8 +78,15 @@ main{
     align-content: center;
 }
 
+/* MAIN CONTENT */
 
-
+    /* DASHBOARD */
+    .avatar{
+        width: 30px;
+    }
+    table tr td:first-child{
+        width: 30%;
+    }
 
 
 /* MEDIA QUERY */
@@ -92,5 +99,7 @@ main{
         width: calc(100% - 80px);
         height: 100%;
     }
-
+    table tr td:first-child{
+        width: 60%;
+    }
 }

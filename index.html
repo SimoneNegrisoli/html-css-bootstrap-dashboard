@@ -30,10 +30,10 @@
                 <div id="search">
                     <form class="container-fluid">
                         <div class="input-group">
-                            <span class="input-group-text" id="basic-addon1">
+                            <span class="input-group-text bg-transparent" id="basic-addon1">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </span>
-                            <input type="text" class="form-control" placeholder="Username"
+                            <input type="text" class="form-control border-start-0" placeholder="Username"
                                 aria-label="Prova a cercare: Lezioni di Laravel" aria-describedby="basic-addon1">
                         </div>
                     </form>
@@ -50,22 +50,21 @@
                         <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
                     </div>
 
-                    <div class="dropdown">
-                        <button id="bell" class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-bell fa-lg"></i>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="#">Profilo</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">Fatturazione</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">Logout</a>
-                            </li>
-                        </ul>
-                    </div>
+                    <button id="bell" class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bell fa-lg"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#">Profilo</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Fatturazione</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </li>
+                    </ul>
+
 
                 </div>
             </div>
@@ -74,24 +73,24 @@
         <main class="debug">
             <div id="side-bar" class="text-light d-flex flex-column justify-content-between align-content-center">
                 <div class="side-top">
-                    <ul class="py-2">
-                        <li class="d-flex align-items-center gap-2 py-2">
+                    <ul class="py-2 me-2">
+                        <li class="d-flex align-items-center gap-2 py-2 p-2">
                             <i class="fa-solid fa-house"></i>
                             <span class="d-none d-lg-block">Home</span>
                         </li>
-                        <li class="d-flex align-items-center gap-2 py-2">
+                        <li class="d-flex align-items-center gap-2 py-2 p-2">
                             <i class="fa-solid fa-chart-simple"></i>
                             <span class="d-none d-lg-block">Stats</span>
                         </li>
-                        <li class="d-flex align-items-center gap-2 py-2">
+                        <li class="d-flex align-items-center gap-2 py-2 p-2">
                             <i class="fa-solid fa-signal"></i>
                             <span class="d-none d-lg-block">Signals</span>
                         </li>
                     </ul>
                 </div>
                 <div class="side-bottom">
-                    <ul>
-                        <li class="d-flex align-items-center gap-2 py-2">
+                    <ul class="me-2">
+                        <li class="d-flex align-items-center gap-2 py-2 p-2">
                             <i class="fa-solid fa-gear"></i>
                             <span class="d-none d-lg-block">Admin</span>
                         </li>
@@ -115,40 +114,213 @@
                     </div>
                 </div>
 
-                <div class="container-fluid">
-                    <div id="dashboard" class="row">
+                <div id="dashboard" class="container-fluid">
+                    <div class="row ">
                         <div id="dash-left" class="col-12 col-lg-8">
-                            <div class="row w-100">
-                                <div class="col-5 w-100">
-                                    <div class="card w-100">
-                                        <div class="card-header w-100">
-                                            <h2>
-                                                Prossime classi
-                                            </h2>
-                                        </div>
-
-                                        <div class="list-group list-group-flush d-flex">
-                                            <a href="#" class="list-group-item list-group-item-action "
-                                                aria-current="true">
-                                                nome
-                                            </a>
-                                            <a href="#" class="list-group-item list-group-item-action">
-                                                data inizio 
-                                            </a>
-                                            <a href="#" class="list-group-item list-group-item-action">
-                                                roi
-                                            </a>
-                                        </div>
-
-
-                                        <!-- fare tabella orrizzontale ed eliminarne i bordi  -->
-
-
-
-
-                                    </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h2>Prossime classi</h2>
                                 </div>
+                                <table class="table">
+
+                                    <tr>
+                                        <td scope="col">Nome</td>
+                                        <td scope="col" class="d-none d-lg-table-cell">Data inizio</td>
+                                        <td scope="col" class="d-none d-lg-table-cell">Roi</td>
+                                        <td scope="col">Stato</td>
+                                        <td scope="col">Azioni</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+
+                                            <img class="avatar" src="./img/class-avatar.jpg" alt="class-avatar">
+
+                                            Classe 75
+                                        </td>
+                                        <td class="d-none d-lg-table-cell">15 Febbraio 2021</td>
+                                        <td class="d-none d-lg-table-cell">20%</td>
+                                        <td>
+                                            <div class="badge bg-success text-light">
+                                                Done
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-pen"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-trash-can"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+
+                                            <img class="avatar" src="./img/class-avatar.jpg" alt="class-avatar">
+
+                                            Classe 76
+                                        </td>
+                                        <td class="d-none d-lg-table-cell">16 Febbraio 2021</td>
+                                        <td class="d-none d-lg-table-cell">20%</td>
+                                        <td>
+                                            <div class="badge bg-success text-light">
+                                                Done
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-pen"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-trash-can"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+
+                                            <img class="avatar" src="./img/class-avatar.jpg" alt="class-avatar">
+
+                                            Classe 77
+                                        </td>
+                                        <td class="d-none d-lg-table-cell">17 Febbraio 2021</td>
+                                        <td class="d-none d-lg-table-cell">20%</td>
+                                        <td>
+                                            <div class="badge bg-warning text-light">
+                                                Process
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-pen"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-trash-can"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+
+                                            <img class="avatar" src="./img/class-avatar.jpg" alt="class-avatar">
+
+                                            Classe 78
+                                        </td>
+                                        <td class="d-none d-lg-table-cell">18 Febbraio 2021</td>
+                                        <td class="d-none d-lg-table-cell">20%</td>
+                                        <td>
+                                            <div class="badge bg-success text-light">
+                                                Done
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-pen"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-trash-can"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+
+                                            <img class="avatar" src="./img/class-avatar.jpg" alt="class-avatar">
+
+                                            Classe 79
+                                        </td>
+                                        <td class="d-none d-lg-table-cell">19 Febbraio 2021</td>
+                                        <td class="d-none d-lg-table-cell">20%</td>
+                                        <td>
+                                            <div class="badge bg-danger text-light">
+                                                Failed
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-pen"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-trash-can"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+
+                                            <img class="avatar" src="./img/class-avatar.jpg" alt="class-avatar">
+
+                                            Classe 80
+                                        </td>
+                                        <td class="d-none d-lg-table-cell">20 Febbraio 2021</td>
+                                        <td class="d-none d-lg-table-cell">20%</td>
+                                        <td>
+                                            <div class="badge bg-success text-light">
+                                                Done
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-pen"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-trash-can"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+
+                                            <img class="avatar" src="./img/class-avatar.jpg" alt="class-avatar">
+
+                                            Classe 81
+                                        </td>
+                                        <td class="d-none d-lg-table-cell">21 Febbraio 2021</td>
+                                        <td class="d-none d-lg-table-cell">20%</td>
+                                        <td>
+                                            <div class="badge bg-danger text-light">
+                                                Failed
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-pen"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-trash-can"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+
+                                            <img class="avatar" src="./img/class-avatar.jpg" alt="class-avatar">
+
+                                            Classe 82
+                                        </td>
+                                        <td class="d-none d-lg-table-cell">22 Febbraio 2021</td>
+                                        <td class="d-none d-lg-table-cell">20%</td>
+                                        <td>
+                                            <div class="badge bg-success text-light">
+                                                Done
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-pen"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-trash-can"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </table>
+                                    
                             </div>
+
+
+
 
                         </div>
                         <div id="dash-right" class="col-12 col-lg-4">
