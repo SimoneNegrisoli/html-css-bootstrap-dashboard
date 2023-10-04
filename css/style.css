@@ -88,6 +88,16 @@ main{
         width: 30%;
     }
 
+    /* MAIN NAV */
+
+    #main-nav h3 {
+        margin-bottom: 0;
+        display: inline-block;
+    }
+
+    .my-pill-colors{
+        background-color: #165BBA;
+    }
 
 /* MEDIA QUERY */
 @media screen and (max-width: 991px){
